@@ -1,14 +1,8 @@
 import React from 'react'
+import {introText} from '../contants/index'
 
 
-import about from '../assets/imges/imgs.png';
 import about2 from '../assets/imges/imgs2.png';
-
-
-const introText = {
-    title:'port developer',
-    desc:['talent is','found ad the end of the','effort']
-}
 
 
 const Intro = () => {
@@ -34,8 +28,7 @@ const Intro = () => {
                     <div>{introText.desc[2]}</div>
                 </div>
                 <div className="img">
-                    <img src={about} alt="내사진" />
-                    {/* <img src={about2} alt="개" /> */}
+                    <img src={introText.img} alt="내사진" />
                 </div>
             </div>
             <div className="intro_lines bottom" aria-hidden='true'>

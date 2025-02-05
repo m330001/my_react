@@ -1,27 +1,6 @@
 import React, { useState } from 'react'
+import {headerNav}from "../contants/index";
 
-const headerNav =[
-    {
-        title:"intro",
-        url:"#intro"
-    },
-    {
-        title:"skill",
-        url:"#skill"
-    },
-    {
-        title:"site",
-        url:"#site"
-    },
-    {
-        title:"port",
-        url:"#port"
-    },
-    {
-        title:"contact",
-        url:"#contact"
-    },
-]
 
 const Header = () => {
     const [show,setShow]=useState(false);
