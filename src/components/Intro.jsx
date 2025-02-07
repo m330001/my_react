@@ -1,18 +1,16 @@
 import React from 'react'
-import {introText} from '../contants/index'
-
-
-import about2 from '../assets/imges/imgs2.png';
+import about from "../assets/img/about.png";
+import {introText} from "../contants";
 
 
 const Intro = () => {
   return (
-    <section id='intro'>
+      <section id='intro'>
         <div className="intro_inner">
             <h1 className='intro_title'>
-                {introText.title}
+                {introText.titel}
             </h1>
-            <div className="intro_lines" aria-hidden='true'>
+            <div className="intro_lines" aria-hidden="true">
                 <span className='line'></span>
                 <span className='line'></span>
                 <span className='line'></span>
@@ -28,11 +26,11 @@ const Intro = () => {
                     <div>{introText.desc[2]}</div>
                 </div>
                 <div className="img">
-                    <img src={introText.img} alt="내사진" />
+                    <img src={about} alt="이미지 넣기" />
                 </div>
             </div>
-            <div className="intro_lines bottom" aria-hidden='true'>
-                <span className='line'></span>
+            <div className="intro_lines bottom" aria-hidden="true">
+            <span className='line'></span>
                 <span className='line'></span>
                 <span className='line'></span>
                 <span className='line'></span>
@@ -41,7 +39,7 @@ const Intro = () => {
                 <span className='line'></span>
             </div>
         </div>
-    </section>
+      </section>
   )
 }
 

@@ -1,6 +1,7 @@
 #port{
     width: 100%;
     margin-top: 30vh;
+    overflow: hidden;
 }
 .port_inner{
     padding: 16px;
@@ -11,12 +12,13 @@
         font-size: 4vw;
         font-weight: 900;
         line-height: 1.6;
-        font-family: var(--mainKor-font);
         text-transform: uppercase;
-        border-bottom: 0.4vw solid;
+        font-family: var(--mainKor-font);
+        border-bottom: 0.4vw solid var(--black);
         margin-bottom: 20px;
+
         em{
-            font-size: 1.25rem;
+            font-size:1.25rem;
             font-weight: 400;
             line-height: 2;
         }
@@ -25,12 +27,14 @@
         display: flex;
         flex-wrap: wrap;
         width: 4000px;
+
         .port_item{
             width: 500px;
             height: 70vh;
             background-color: var(--subBg100);
             padding: 2.5rem;
             margin-right: 20px;
+
             &.p1{background-color: var(--subBg100);}
             &.p2{background-color: var(--subBg200);}
             &.p3{background-color: var(--subBg300);}
@@ -40,14 +44,15 @@
 
             .num{
                 font-size: 2rem;
-                color: var(--mainNum-font);
+                font-family: var(--mainNum-font);
             }
             .img{
                 display: block;
                 margin-top: -20px;
-                transition: margin-top 0.2s,filter 1s;
+                transition: margin-top 0.3s;
                 filter: saturate(0%);
                 margin-bottom: 2rem;
+
                 &:hover{
                     margin-top: 0px;
                     filter: saturate(100%);
@@ -58,25 +63,25 @@
                 text-align: center;
                 border-bottom: 2px solid var(--black100);
                 padding-bottom: 0.8rem;
-                margin-bottom: 1rem;
+                margin-bottom: 1rem;                
             }
             .desc{
                 text-align: justify;
-                margin-bottom: 1.5rem;
+                margin-bottom: 1rem; 
             }
             .site{
                 border: 1px solid var(--black100);
                 display: block;
                 text-align: center;
                 padding: 10px 0px;
-                transition:background-color 0.2s,color 0.2s ;
-
+                transition: all 0.3s;
+                
                 &:hover{
                     background-color: var(--black100);
                     color: var(--white);
                 }
             }
-        }
 
+        }
     }
 }
